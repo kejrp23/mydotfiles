@@ -27,6 +27,7 @@
  Plug 'preservim/nerdtree' 
  Plug 'dracula/vim',{'as':'dracula'} 
  Plug 'valloric/youcompleteme' 
+ Plug 'dense-analysis/ale'
    
    
    
