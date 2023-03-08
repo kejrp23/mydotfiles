@@ -12,10 +12,7 @@
  set scrolloff=8 
  set hls 
  set ruler 
-  
-   
-   
-   
+ set wrap
    
    
  "Plugins loaded  
@@ -28,14 +25,10 @@
  Plug 'dracula/vim',{'as':'dracula'} 
  Plug 'valloric/youcompleteme' 
  Plug 'dense-analysis/ale'
-   
+ PLug 'bfrg/vim-cpp-modern'  
    
    
  call plug#end() 
-   
-   
-   
-   
    
    
  "Auto Commands 
@@ -43,3 +36,4 @@
  colorscheme dracula 
    
  inore jj <Esc>
+ map ff :NERDTree
