@@ -25,7 +25,7 @@
  Plug 'dracula/vim',{'as':'dracula'} 
  Plug 'valloric/youcompleteme' 
  Plug 'dense-analysis/ale'
- PLug 'bfrg/vim-cpp-modern'  
+ Plug 'bfrg/vim-cpp-modern'  
    
    
  call plug#end() 
