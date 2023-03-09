@@ -36,4 +36,4 @@
  colorscheme dracula 
    
  inore jj <Esc>
- map ff :NERDTree
+ map ff :NERDTree <enter>
