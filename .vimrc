@@ -37,3 +37,4 @@
    
  inore jj <Esc>
  map ff :NERDTree <enter>
+ map nn :below term <enter>
