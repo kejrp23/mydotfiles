@@ -13,6 +13,8 @@
  set hls 
  set ruler 
  set wrap
+ set complete+=kspell
+ set mouse =
    
    
  "Plugins loaded  
@@ -23,7 +25,7 @@
  Plug 'gruvbox-community/gruvbox' 
  Plug 'preservim/nerdtree' 
  Plug 'dracula/vim',{'as':'dracula'} 
- Plug 'valloric/youcompleteme' 
+ "Plug 'valloric/youcompleteme' 
  Plug 'dense-analysis/ale'
  Plug 'bfrg/vim-cpp-modern'  
    
