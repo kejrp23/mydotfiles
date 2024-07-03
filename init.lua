@@ -94,7 +94,7 @@ vim.g.maplocalleader = " "
 vim.opt.spell = true
 
 -- Set to true if you have a Nerd Font installed and selected in the terminal
-vim.g.have_nerd_font = ture
+vim.g.have_nerd_font = true
 
 -- [[ Setting options ]]
 -- See `:help vim.opt`
@@ -164,9 +164,10 @@ vim.opt.scrolloff = 10
 vim.opt.hlsearch = true
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 vim.keymap.set("n", "ff", ":NERDTree <enter>")
-vim.keymap.set("i", "jj", "<Esc>") --custome escape remap
-vim.keymap.set("n", "nvw", ":vnew <Enter>") --New Vertical Window
-vim.keymap.set("n", "nhw", ":split <Enter>") --New Horizontal Window
+vim.keymap.set("i", "jj", "<Esc>", { desc = "custom escape remap" })
+vim.keymap.set("n", "nvw", ":vnew <Enter>", { desc = "New Vertical Window" })
+
+vim.keymap.set("n", "nhw", ":split <Enter>", { desc = "New Horizontal Window" })
 vim.keymap.set("n", "nt", ":terminal <Enter>", { desc = "Open's a new terminal in current window" })
 
 -- Diagnostic keymaps
@@ -791,14 +792,15 @@ require("lazy").setup({
 		-- change the command in the config to whatever the name of that colorscheme is.
 		--
 		-- If you want to see what colorschemes are already installed, you can use `:Telescope colorscheme`.
-		"folke/tokyonight.nvim",
+		-- "folke/tokyonight.nvim",
+		"Mofiqul/dracula.nvim",
 		priority = 1000, -- Make sure to load this before all the other start plugins.
 		init = function()
 			-- Load the colorscheme here.
 			-- Like many other themes, this one has different styles, and you could load
 			-- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
-			vim.cmd.colorscheme("tokyonight-night")
-
+			--vim.cmd.colorscheme("tokyonight-night")
+			vim.cmd.colorscheme("dracula")
 			-- You can configure highlights by doing something like:
 			vim.cmd.hi("Comment gui=none")
 		end,
